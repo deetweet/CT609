@@ -30,7 +30,6 @@ int main() {
     char inFilename[FILENAME_LEN];  //array of chars to store the intput filename (max len is 1000)
     char *contents[MAX];            //array to store the contents of the file
     char *word;                     //temp variable to run string functions against
-    char *sstring;
 //  check if the file was read successfully. loop and prompt the user again until a valid file is provided
     do {
         printf("Enter Input Filename (ctrl + c to exit)> ");
@@ -47,7 +46,6 @@ int main() {
             printf("%s\n", contents[i]);
         }
     }
-    //free(contents);
     free(word);
     return 0;
 }
